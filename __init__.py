@@ -19,7 +19,7 @@
 bl_info = {
     "name":        "VSE Extras",
     "author":      "Pushakar Gaikwad",
-    "version":     (1, 0, 1),
+    "version":     (1, 0, 2),
     "blender":     (4, 4, 0),
     "description": "Extra features and tools for the VSE",
     "category": "Sequencer",
