@@ -80,7 +80,7 @@ def register():
 
 def unregister():
 
-    bpy.types.SEQUENCER_HT_header.append(draw_render_button)
+    bpy.types.SEQUENCER_HT_header.remove(draw_render_button)
 
     # remove keymap items
     for km, kmi in addon_keymaps:
