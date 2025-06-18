@@ -43,6 +43,14 @@ class VSE_EXTRAS_OT_SplitStrip(bpy.types.Operator):
         bpy.ops.sequencer.gap_remove()
         bpy.context.scene.frame_current = remember_frame
         return {'FINISHED'}
+    
+# Button on Sequencer header - that renders the video
+
+def draw_render_button(self, context):
+    layout = self.layout
+    op = layout.operator("render.render", text="Render", icon='RENDER_ANIMATION')
+    op.animation = True
+    op.use_viewport = True
         
     
 CLASSES = (
@@ -66,9 +74,14 @@ def register():
 
     addon_keymaps.append((km, kmi))
 
+    bpy.types.SEQUENCER_HT_header.append(draw_render_button)
+
 
 
 def unregister():
+
+    bpy.types.SEQUENCER_HT_header.remove(draw_render_button)
+
     # remove keymap items
     for km, kmi in addon_keymaps:
         km.keymap_items.remove(kmi)
