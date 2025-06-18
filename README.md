@@ -8,9 +8,10 @@
 
 ## ✨ Features
 
-| Shortcut | Action                                                                                                                                                                                       |
-| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Z**    | Deletes the **selected** strip and automatically pulls neighbouring clips together so the timeline stays gap‑free. The strip does **not** need to sit under the playhead. Full Undo support. |
+| Feature                               | Description                                                                                                                                                                                  |
+| ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Z**                                 | Deletes the **selected** strip and automatically pulls neighbouring clips together so the timeline stays gap‑free. The strip does **not** need to sit under the playhead. Full Undo support. |
+| **Render Button in Sequencer Header** | UI enhancement to make rendering easier for new and experienced users.                                                                                                                       |
 
 More time‑saving operators are on the way – stay tuned.
 
